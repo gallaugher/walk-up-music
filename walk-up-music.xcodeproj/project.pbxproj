@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E302019263337EF00CAC441 /* QueueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E302018263337EF00CAC441 /* QueueTableViewCell.swift */; };
+		3E30207E2633468700CAC441 /* UIView+makeCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E30207D2633468700CAC441 /* UIView+makeCorner.swift */; };
+		3E3672C526323E0C00536566 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3672C426323E0C00536566 /* QueueViewController.swift */; };
+		3E49D6F42631DFFE00A6765A /* BadAss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49D6F32631DFFE00A6765A /* BadAss.swift */; };
+		3E49D6F72631E04500A6765A /* BadAsses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49D6F62631E04500A6765A /* BadAsses.swift */; };
+		3E49D7192631E30800A6765A /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49D7182631E30800A6765A /* DetailTableViewController.swift */; };
+		3E49D73B2631E50000A6765A /* BadAssListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49D73A2631E50000A6765A /* BadAssListViewController.swift */; };
+		3E49D75D2631EC4B00A6765A /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E49D75C2631EC4B00A6765A /* UIViewController+alert.swift */; };
+		3E69071726334C0800FDC971 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E69071626334C0800FDC971 /* APIKeys.swift */; };
+		3EF658772631B07500234D64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF658762631B07500234D64 /* AppDelegate.swift */; };
+		3EF658792631B07500234D64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF658782631B07500234D64 /* SceneDelegate.swift */; };
+		3EF6587B2631B07500234D64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6587A2631B07500234D64 /* LoginViewController.swift */; };
+		3EF6587E2631B07500234D64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6587C2631B07500234D64 /* Main.storyboard */; };
+		3EF658802631B07700234D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6587F2631B07700234D64 /* Assets.xcassets */; };
+		3EF658832631B07700234D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF658812631B07700234D64 /* LaunchScreen.storyboard */; };
+		3EF6588D2631B0EE00234D64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6588C2631B0ED00234D64 /* GoogleService-Info.plist */; };
+		B81AFB0297D17F0C8AF68354 /* Pods_walk_up_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19E1265CA7299BF7FF69DF3 /* Pods_walk_up_music.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E302018263337EF00CAC441 /* QueueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTableViewCell.swift; sourceTree = "<group>"; };
+		3E30207D2633468700CAC441 /* UIView+makeCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+makeCorner.swift"; sourceTree = "<group>"; };
+		3E3672C426323E0C00536566 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		3E367B5526345007002C9BEB /* walk-up-music.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "walk-up-music.entitlements"; sourceTree = "<group>"; };
+		3E49D6F32631DFFE00A6765A /* BadAss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadAss.swift; sourceTree = "<group>"; };
+		3E49D6F62631E04500A6765A /* BadAsses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadAsses.swift; sourceTree = "<group>"; };
+		3E49D7182631E30800A6765A /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		3E49D73A2631E50000A6765A /* BadAssListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadAssListViewController.swift; sourceTree = "<group>"; };
+		3E49D75C2631EC4B00A6765A /* UIViewController+alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		3E69071626334C0800FDC971 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		3EF658732631B07500234D64 /* walk-up-music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "walk-up-music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF658762631B07500234D64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EF658782631B07500234D64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3EF6587A2631B07500234D64 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3EF6587D2631B07500234D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EF6587F2631B07700234D64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EF658822631B07700234D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EF658842631B07700234D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF6588C2631B0ED00234D64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		62BB7F0AD5A2B60E2D68F06B /* Pods-walk-up-music.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walk-up-music.debug.xcconfig"; path = "Target Support Files/Pods-walk-up-music/Pods-walk-up-music.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3500F137E7DDA430E885A8 /* Pods-walk-up-music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walk-up-music.release.xcconfig"; path = "Target Support Files/Pods-walk-up-music/Pods-walk-up-music.release.xcconfig"; sourceTree = "<group>"; };
+		E19E1265CA7299BF7FF69DF3 /* Pods_walk_up_music.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_walk_up_music.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EF658702631B07500234D64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81AFB0297D17F0C8AF68354 /* Pods_walk_up_music.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		075200428D97A64C8B6E3678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BB7F0AD5A2B60E2D68F06B /* Pods-walk-up-music.debug.xcconfig */,
+				9C3500F137E7DDA430E885A8 /* Pods-walk-up-music.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3E30205926333B6500CAC441 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E49D6F32631DFFE00A6765A /* BadAss.swift */,
+				3E49D6F62631E04500A6765A /* BadAsses.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E30205A26333B8400CAC441 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EF6587A2631B07500234D64 /* LoginViewController.swift */,
+				3E49D73A2631E50000A6765A /* BadAssListViewController.swift */,
+				3E49D7182631E30800A6765A /* DetailTableViewController.swift */,
+				3E3672C426323E0C00536566 /* QueueViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E30205B26333B9300CAC441 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E302018263337EF00CAC441 /* QueueTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E30205C26333BA000CAC441 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E49D75C2631EC4B00A6765A /* UIViewController+alert.swift */,
+				3E30207D2633468700CAC441 /* UIView+makeCorner.swift */,
+				3E69071626334C0800FDC971 /* APIKeys.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3EF6586A2631B07500234D64 = {
+			isa = PBXGroup;
+			children = (
+				3EF658752631B07500234D64 /* walk-up-music */,
+				3EF658742631B07500234D64 /* Products */,
+				075200428D97A64C8B6E3678 /* Pods */,
+				88E2FE677B130A92F81DE552 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EF658742631B07500234D64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EF658732631B07500234D64 /* walk-up-music.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EF658752631B07500234D64 /* walk-up-music */ = {
+			isa = PBXGroup;
+			children = (
+				3E367B5526345007002C9BEB /* walk-up-music.entitlements */,
+				3EF658762631B07500234D64 /* AppDelegate.swift */,
+				3EF658782631B07500234D64 /* SceneDelegate.swift */,
+				3E30205926333B6500CAC441 /* Models */,
+				3E30205A26333B8400CAC441 /* Controllers */,
+				3E30205B26333B9300CAC441 /* Views */,
+				3E30205C26333BA000CAC441 /* Utilities */,
+				3EF6587C2631B07500234D64 /* Main.storyboard */,
+				3EF6587F2631B07700234D64 /* Assets.xcassets */,
+				3EF658812631B07700234D64 /* LaunchScreen.storyboard */,
+				3EF658842631B07700234D64 /* Info.plist */,
+				3EF6588C2631B0ED00234D64 /* GoogleService-Info.plist */,
+			);
+			path = "walk-up-music";
+			sourceTree = "<group>";
+		};
+		88E2FE677B130A92F81DE552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19E1265CA7299BF7FF69DF3 /* Pods_walk_up_music.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EF658722631B07500234D64 /* walk-up-music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF658872631B07700234D64 /* Build configuration list for PBXNativeTarget "walk-up-music" */;
+			buildPhases = (
+				4CFB89C1171D7DCA98759B27 /* [CP] Check Pods Manifest.lock */,
+				3EF6586F2631B07500234D64 /* Sources */,
+				3EF658702631B07500234D64 /* Frameworks */,
+				3EF658712631B07500234D64 /* Resources */,
+				96E0EDFB7734C819B4ED589D /* [CP] Embed Pods Frameworks */,
+				D73B39AE139DE57F2CDFE1E1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "walk-up-music";
+			productName = "walk-up-music";
+			productReference = 3EF658732631B07500234D64 /* walk-up-music.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EF6586B2631B07500234D64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3EF658722631B07500234D64 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 3EF6586E2631B07500234D64 /* Build configuration list for PBXProject "walk-up-music" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EF6586A2631B07500234D64;
+			productRefGroup = 3EF658742631B07500234D64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EF658722631B07500234D64 /* walk-up-music */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EF658712631B07500234D64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF658832631B07700234D64 /* LaunchScreen.storyboard in Resources */,
+				3EF6588D2631B0EE00234D64 /* GoogleService-Info.plist in Resources */,
+				3EF658802631B07700234D64 /* Assets.xcassets in Resources */,
+				3EF6587E2631B07500234D64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CFB89C1171D7DCA98759B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-walk-up-music-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E0EDFB7734C819B4ED589D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-walk-up-music/Pods-walk-up-music-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-walk-up-music/Pods-walk-up-music-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-walk-up-music/Pods-walk-up-music-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73B39AE139DE57F2CDFE1E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-walk-up-music/Pods-walk-up-music-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-walk-up-music/Pods-walk-up-music-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-walk-up-music/Pods-walk-up-music-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EF6586F2631B07500234D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E49D7192631E30800A6765A /* DetailTableViewController.swift in Sources */,
+				3EF6587B2631B07500234D64 /* LoginViewController.swift in Sources */,
+				3E49D6F42631DFFE00A6765A /* BadAss.swift in Sources */,
+				3EF658772631B07500234D64 /* AppDelegate.swift in Sources */,
+				3E30207E2633468700CAC441 /* UIView+makeCorner.swift in Sources */,
+				3EF658792631B07500234D64 /* SceneDelegate.swift in Sources */,
+				3E69071726334C0800FDC971 /* APIKeys.swift in Sources */,
+				3E302019263337EF00CAC441 /* QueueTableViewCell.swift in Sources */,
+				3E49D73B2631E50000A6765A /* BadAssListViewController.swift in Sources */,
+				3E49D6F72631E04500A6765A /* BadAsses.swift in Sources */,
+				3E3672C526323E0C00536566 /* QueueViewController.swift in Sources */,
+				3E49D75D2631EC4B00A6765A /* UIViewController+alert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3EF6587C2631B07500234D64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EF6587D2631B07500234D64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EF658812631B07700234D64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EF658822631B07700234D64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EF658852631B07700234D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EF658862631B07700234D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EF658882631B07700234D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BB7F0AD5A2B60E2D68F06B /* Pods-walk-up-music.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "walk-up-music/walk-up-music.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9937BJYLPH;
+				INFOPLIST_FILE = "walk-up-music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gallaugher.Walk-Up-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EF658892631B07700234D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3500F137E7DDA430E885A8 /* Pods-walk-up-music.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "walk-up-music/walk-up-music.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9937BJYLPH;
+				INFOPLIST_FILE = "walk-up-music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gallaugher.Walk-Up-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EF6586E2631B07500234D64 /* Build configuration list for PBXProject "walk-up-music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF658852631B07700234D64 /* Debug */,
+				3EF658862631B07700234D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EF658872631B07700234D64 /* Build configuration list for PBXNativeTarget "walk-up-music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF658882631B07700234D64 /* Debug */,
+				3EF658892631B07700234D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EF6586B2631B07500234D64 /* Project object */;
+}
