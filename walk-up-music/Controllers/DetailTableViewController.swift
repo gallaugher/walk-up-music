@@ -22,7 +22,7 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var playStopButton: UIButton!
-    @IBOutlet weak var cuePlayIn: UIButton!
+    @IBOutlet weak var playInSwitch: UISwitch!
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
     @IBOutlet weak var chooseSongButton: UIButton!
     @IBOutlet weak var lookupHometownButton: UIButton!
@@ -38,9 +38,14 @@ class DetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imagePickerController.delegate = self
         
-//        photoImageView.makeCornerRadio(withRadius: 15.0)
+        // hide keyboard if we tap outside of a field
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
+        imagePickerController.delegate = self
+        photoImageView.roundCorner(withRadius: 25.0)
         
         if badAss == nil {
             badAss = BadAss()
@@ -54,19 +59,24 @@ class DetailTableViewController: UITableViewController {
         let currentUserID = (Auth.auth().currentUser?.uid)
         // Allow updates if this is a new user (postingID is "") or user owns this record
         if currentUserID == badAss.postingUserID || badAss.postingUserID == "" {
-            cuePlayIn.isEnabled = true
+            firstNameTextField.isEnabled = true
+            lastNameTextField.isEnabled = true
+            playInSwitch.isEnabled = true
             saveBarButton.isEnabled = true
             chooseSongButton.isEnabled = true
             lookupHometownButton.isEnabled = true
             addPhotoButton.isEnabled = true
         } else {
-            cuePlayIn.isEnabled = false
+            firstNameTextField.isEnabled = false
+            lastNameTextField.isEnabled = false
+            playInSwitch.isEnabled = false
             saveBarButton.isEnabled = false
             chooseSongButton.isEnabled = false
             lookupHometownButton.isEnabled = false
             addPhotoButton.isEnabled = false
         }
-
+        
+        playInSwitch.isOn = badAss.queued
         firstNameTextField.text = badAss.firstName
         lastNameTextField.text = badAss.lastName
         songTextField.text = badAss.song
@@ -164,11 +174,13 @@ class DetailTableViewController: UITableViewController {
         present(documentPicker, animated: true, completion: nil)
     }
     
-    @IBAction func playMeInPressed(_ sender: UIButton) {
-        badAss.queued = true
-        badAss.timePosted = Date()
+    @IBAction func playInPressed(_ sender: UISwitch) {
+        badAss.queued = sender.isOn
+        if sender.isOn {
+            badAss.timePosted = Date()
+        }
     }
-    
+
     @IBAction func playMySong(_ sender: UIButton) {
         if audioPlayer != nil && audioPlayer.isPlaying {
             playStopButton.setImage(playImage, for: .normal)

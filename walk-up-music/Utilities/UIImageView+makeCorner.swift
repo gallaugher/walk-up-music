@@ -7,10 +7,9 @@
 
 import UIKit
 
-extension UIView {
-    func makeCorner(withRadius radius: CGFloat) {
+extension UIImageView {
+    func roundCorner(withRadius radius: CGFloat) {
         self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
-        self.layer.isOpaque = false
+        self.clipsToBounds = true
     }
 }

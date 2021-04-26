@@ -33,4 +33,28 @@ class BadAsses {
             completed()
         }
     }
+    
+    func removeAllQueRequests(completed: @escaping () -> ()) {
+        db.collection("badAsses").getDocuments()  { (querySnapshot, error) in
+            guard error == nil else {
+                print("😡 ERROR: adding the snapshot listener \(error!.localizedDescription)")
+                return completed()
+            }
+            self.badAssArray = [] // clean out existing spotArray since new data will load
+            // there are querySnapshot!.documents.count documents in the snapshot
+            for document in querySnapshot!.documents {
+                let ref = document.reference
+                ref.updateData([
+                    "queued": false
+                ]) { error in
+                    if let error = error {
+                        print("😡 ERROR: Could not update queued value in document \(document.documentID): \(error.localizedDescription)")
+                    } else {
+                        print("Successfully removed value from queued!")
+                    }
+                }
+            }
+            completed()
+        }
+    }
 }

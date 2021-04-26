@@ -151,20 +151,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song, Artist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ts-tL-Rb4">
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song, Artist" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ts-tL-Rb4">
                                                     <rect key="frame" x="16" y="5" width="358" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F8-6A-QV8">
-                                                    <rect key="frame" x="277" y="49" width="97" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Cue Play In"/>
-                                                    <connections>
-                                                        <action selector="playMeInPressed:" destination="kCe-Z6-1qV" eventType="touchUpInside" id="Zb4-UW-LhC"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHD-uJ-0Dt">
                                                     <rect key="frame" x="16" y="49" width="109" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -181,7 +172,33 @@
                                                         <action selector="playMySong:" destination="kCe-Z6-1qV" eventType="touchUpInside" id="UM2-Lh-yGQ"/>
                                                     </connections>
                                                 </button>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WA-xP-4mU">
+                                                    <rect key="frame" x="325" y="49" width="49" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="18S-F8-TSW"/>
+                                                        <constraint firstAttribute="width" constant="47" id="Xrz-Ib-cKu"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="playInPressed:" destination="kCe-Z6-1qV" eventType="valueChanged" id="pfK-8j-Lnw"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play In:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-d7-Ofb">
+                                                    <rect key="frame" x="262" y="53" width="55" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="S1V-Dz-FP2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="3WA-xP-4mU" secondAttribute="trailing" constant="18" id="5Ul-fZ-fHQ"/>
+                                                <constraint firstItem="3WA-xP-4mU" firstAttribute="top" secondItem="4ts-tL-Rb4" secondAttribute="bottom" constant="10" id="KYT-Sm-cpg"/>
+                                                <constraint firstItem="3WA-xP-4mU" firstAttribute="leading" secondItem="WQw-d7-Ofb" secondAttribute="trailing" constant="8" symbolic="YES" id="RkJ-UD-OzP"/>
+                                                <constraint firstItem="WQw-d7-Ofb" firstAttribute="top" secondItem="4ts-tL-Rb4" secondAttribute="bottom" constant="14" id="qXW-8b-qgy"/>
+                                                <constraint firstItem="4ts-tL-Rb4" firstAttribute="top" secondItem="O39-Iu-1eU" secondAttribute="top" constant="5" id="w3Y-WF-7H7"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -268,13 +285,13 @@
                     <connections>
                         <outlet property="addPhotoButton" destination="Pgm-mq-kgS" id="ILJ-r8-gSb"/>
                         <outlet property="chooseSongButton" destination="RHD-uJ-0Dt" id="Tjz-Nx-xVw"/>
-                        <outlet property="cuePlayIn" destination="5F8-6A-QV8" id="9ff-OU-GUb"/>
                         <outlet property="firstNameTextField" destination="WlT-RS-Tf6" id="5Kq-tb-aXh"/>
                         <outlet property="hometownTextField" destination="QGQ-eg-yLS" id="fJO-2c-v0p"/>
                         <outlet property="lastNameTextField" destination="3xe-9H-c3N" id="Hpi-Wo-sgx"/>
                         <outlet property="lookupHometownButton" destination="cjg-EN-Y3L" id="xu0-SX-VmE"/>
                         <outlet property="mapView" destination="4p6-KM-0Dv" id="uY3-80-dAl"/>
                         <outlet property="photoImageView" destination="C5N-VM-LUf" id="8nG-WQ-oSC"/>
+                        <outlet property="playInSwitch" destination="3WA-xP-4mU" id="xmu-Sb-WOF"/>
                         <outlet property="playStopButton" destination="Nfs-Xg-r4z" id="1sx-Em-gTr"/>
                         <outlet property="saveBarButton" destination="JOD-S8-ezg" id="Rjx-2X-1lu"/>
                         <outlet property="songTextField" destination="4ts-tL-Rb4" id="lUP-fr-yz3"/>
@@ -314,7 +331,7 @@
                                 <rect key="frame" x="0.0" y="452" width="390" height="358"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="84" id="Zi5-XA-igx" customClass="QueueTableViewCell" customModule="walk_up_music" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="84" id="Zi5-XA-igx" customClass="QueueTableViewCell" customModule="walk_up_music" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="390" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zi5-XA-igx" id="6cU-Ah-4LW">

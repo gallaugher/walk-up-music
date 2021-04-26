@@ -112,24 +112,6 @@ class BadAss: NSObject, MKAnnotation {
         
         uploadTask.observe(.success) { (snapshot) in
             print("Upload Song to Firebase Storage was successful!")
-            
-//            storageRef.downloadURL { (url, error) in
-//                guard error == nil else {
-//                    print("😡 ERROR: Couldn't create a download url \(error!.localizedDescription)")
-//                    return completion(false)
-//                }
-//                // Create the dictionary representing data we want to save
-//                let dataToSave = self.dictionary
-//                let ref = db.collection("badAsses").document(self.documentID)
-//                ref.setData(dataToSave) { (error) in
-//                    guard error == nil else {
-//                        print("😡 ERROR: updating document \(error!.localizedDescription)")
-//                        return completion(false)
-//                    }
-//                    print("💨 Updated document: \(self.documentID)") // It worked!
-//                    completion(true)
-//                }
-//            }
         }
         
         uploadTask.observe(.failure) { (snapshot) in
@@ -212,5 +194,36 @@ class BadAss: NSObject, MKAnnotation {
                 return completion(data!)
             }
         }
+    }
+    
+    // Call this to update the queued flag to the value passed in
+    func updateCueFlag(queued: Bool, completion: @escaping () -> ()) {
+        let db = Firestore.firestore()
+        
+        // Grab the user ID
+        guard let postingUserID = (Auth.auth().currentUser?.uid) else {
+            print("😡 ERROR: Could not save data because we don't have a valid postingUserID")
+            return completion()
+        }
+        self.postingUserID = postingUserID
+        
+        // create filename if necessary
+        if documentID == "" {
+            documentID = postingUserID
+        }
+        
+        // Create the dictionary representing data we want to save
+        let ref = db.collection("badAsses").document(self.documentID)
+        
+        ref.updateData([
+            "queued": queued
+        ]) { error in
+            if let error = error {
+                print("😡 ERROR: Could not update queued value in document \(self.documentID): \(error.localizedDescription)")
+            } else {
+                print("Successfully removed value from queued!")
+            }
+        }
+        completion()
     }
 }
